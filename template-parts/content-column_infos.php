@@ -1,6 +1,6 @@
-<?php
+ <?php
 /**
- * Template part for displaying page content in page.php
+ * Template part for displaying page content in infos.php
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -9,7 +9,7 @@
  * @since 1.0
  * @version 1.0
  */
-require ABSPATH.'/wp-load.php';
+#require '/var/www/econet4.me/web/wp-load.php';
 #edump('hi');
 
 ?>
@@ -19,16 +19,10 @@ require ABSPATH.'/wp-load.php';
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		<?php forever_edit_link( get_the_ID() ); ?>
 	</header> .entry-header -->
-	<div class="entry-content">
+	<div class="center-grid">
 		<?php
 			the_content();
-
-			wp_link_pages(
-				array(
-					'before' => '<div class="page-links">' . __( 'Pages:', 'forever' ),
-					'after'  => '</div>',
-				)
-			);
+ 			#edump($post);
 			?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->

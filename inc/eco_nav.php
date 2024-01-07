@@ -27,7 +27,7 @@ function eco_language_switcher( $args = '' ) {
 	$output = '';
 
 	foreach ( $links as $link ) {
-		#edev($link);
+		edump($link);
 		$count += 1;
 		$class = array();
 		$class[] = bogo_language_tag( $link['locale'] );
@@ -88,6 +88,7 @@ function eco_language_switcher( $args = '' ) {
 			$li
 		);*/
 
+		#trace( 'bogo_use_flags'.(apply_filters( 'bogo_use_flags', true )?'':'') ) {
 		if ( apply_filters( 'bogo_use_flags', true ) ) {
 			$flag = bogo_get_flag( $link['locale'] );
 			$flag = preg_replace( '/(?:.*?)([a-z]+)\.png$/', '$1', $flag, 1 );

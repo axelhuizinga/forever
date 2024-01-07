@@ -9,6 +9,7 @@
  * @since 1.0
  * @version 1.0
  */
+edump(__FILE__);
 
 get_header(); ?>
 
@@ -18,7 +19,7 @@ get_header(); ?>
 
 			<?php
 			/* Start the Loop */
-			while ( have_posts() ) :
+			/*while ( have_posts() ) :
 				the_post();
 
 				get_template_part( 'template-parts/post/content', get_post_format() );
@@ -35,7 +36,7 @@ get_header(); ?>
 					)
 				);
 
-			endwhile; // End of the loop.
+			endwhile; // End of the loop.*/
 			?>
 
 		</main><!-- #main -->

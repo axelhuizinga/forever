@@ -23,9 +23,9 @@ function wow_scripts() {
 	}
 	
 add_action( 'wp_enqueue_scripts', 'wow_scripts' );
-
+require_once('inc/eco_nav.php');
 if(!wp_is_mobile()){
-	require_once('inc/eco_nav.php');
+	
 	require_once('classes/bulma-navwalker.php');
 }
 else{
@@ -651,7 +651,7 @@ add_filter( 'wp_get_attachment_image_attributes', 'forever_post_thumbnail_sizes_
 function forever_front_page_template( $template ) {
 	return is_home() ? '' : $template;
 }
-add_filter( 'frontpage_template', 'forever_front_page_template' );
+#add_filter( 'frontpage_template', 'forever_front_page_template' );
 
 /**
  * Modifies tag cloud widget arguments to display all tags in the same font size
@@ -760,5 +760,13 @@ function send_cors_headers( $headers ) {
     $headers['Access-Control-Allow-Origin'] = 'http://bi4.me:3000';
     return $headers;
 }
+
+### bogo...
+/*add_filter( 'blogdescription', 'tr_option_blogdescription' );
+ 
+function tr_option_blogdescription( $blogdescription ) {
+	edump($blogdescription);
+    return __($blogdescription, 'forever');
+}*/
 ?>
 

@@ -35,7 +35,7 @@
 			 'fallback_cb'		=>	'Bulma_NavWalker::fallback'
 		 ));
 		 ?>
-		 <?php #echo do_shortcode( '[bogo]' ); ?>
+		 <?php echo do_shortcode( '[bogo]' ); ?>
 	 </div>
 </div>
 </nav>

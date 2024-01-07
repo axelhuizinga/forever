@@ -1,6 +1,6 @@
 <?php /* Template Name: Levels */ 
 /**
- * The template for displaying all pages
+ * The template for displaying all membership levels
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -11,7 +11,7 @@
  *
  * @package WordPress
  * @subpackage Forever
- * @since 1.0
+var/www/vhosts/paradiseprojects.de/httpdocs/wp-content/themes/forever/levels.php * @since 1.0
  * @version 1.0
  */
 

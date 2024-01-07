@@ -2,4 +2,7 @@
   "name": "forever",
   "version": "1.0",
   "author": "Axel Huizinga <axel@paradiseprojects.de>"
+  "dependencies": {
+    "bulma-start": "^0.0.4"
+  }
 }

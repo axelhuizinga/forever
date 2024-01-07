@@ -40,4 +40,7 @@ get_header(); ?>
 </div><!-- .wrap -->
 
 <?php
-get_footer();
+if(!is_front_page()){
+	get_footer();
+}
+	
